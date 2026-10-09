@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fieldnote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap mast-row">
+    <a class="brand" href="#home" data-go><span class="mark" aria-hidden="true">f</span><span>Fieldnote</span></a>
+    <form class="search" id="search-form" role="search">
+      <label class="sr" for="q">Search posts</label>
+      <input id="q" type="search" placeholder="Search posts, authors, topics" autocomplete="off">
+    </form>
+    <a class="btn primary" id="write-btn" href="#write" data-go>Write</a>
+    <button type="button" class="icon-btn" id="theme-btn" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
+  </div>
+  <nav class="wrap cats" id="cats" aria-label="Categories"></nav>
+</header>
+
+<main class="wrap" id="app"></main>
+<footer><div class="wrap" id="foot"></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
